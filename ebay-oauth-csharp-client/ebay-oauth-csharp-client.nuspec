@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>eBay.OAuth.Client</id>
-    <version>1.0.1</version>
+    <id>eBay.OAuth.Client (RFP)</id>
+    <version>1.0.1-01</version>
     <title>eBay OAuth C# Client</title>
     <owners>eBay Inc.</owners>
     <authors>Sandeep Dhiman</authors>
