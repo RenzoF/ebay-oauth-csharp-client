@@ -37,6 +37,20 @@ namespace eBay.ApiClient.Auth.OAuth2
             Assert.NotNull(credentials.Get(CredentialType.CERT_ID));
             Assert.NotNull(credentials.Get(CredentialType.REDIRECT_URI));
         }
+        public void LoadCredentialsCustom_Success()
+        {
+            String path = @"../../../ebay-config-sample.yaml";
+
+
+
+            CredentialUtil.Load(path);
+            CredentialUtil.Credentials credentials = CredentialUtil.GetCredentials(OAuthEnvironment.PRODUCTION);
+            Assert.NotNull(credentials);
+            Assert.NotNull(credentials.Get(CredentialType.APP_ID));
+            Assert.NotNull(credentials.Get(CredentialType.DEV_ID));
+            Assert.NotNull(credentials.Get(CredentialType.CERT_ID));
+            Assert.NotNull(credentials.Get(CredentialType.REDIRECT_URI));
+        }
 
     }
 }

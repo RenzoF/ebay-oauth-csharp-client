@@ -18,7 +18,7 @@
 
 using System;
 using Newtonsoft.Json;
-using RestSharp.Deserializers;
+//using RestSharp.Deserializers;
 
 namespace eBay.ApiClient.Auth.OAuth2.Model
 {
